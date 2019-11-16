@@ -124,11 +124,13 @@ namespace {
   constexpr Score PassedRank[RANK_NB] = {
     S(0, 0), S(10, 28), S(17, 33), S(15, 41), S(62, 72), S(168, 177), S(276, 260)
   };
-  
+
   // OutpostRank[Rank] contains a bonus according to the rank of the outpost
   constexpr Score OutpostRank[RANK_NB] = {
     S(0, 0), S(0, 0), S(0, 0), S(28, 18), S(30, 24), S(32, 19)
   };
+
+  // Assorted bonuses and penalties
   constexpr Score BishopPawns        = S(  3,  7);
   constexpr Score CorneredBishop     = S( 50, 50);
   constexpr Score FlankAttacks       = S(  8,  0);
